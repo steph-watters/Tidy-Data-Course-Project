@@ -1,4 +1,4 @@
-## 1. Merge training and test datasets to create one data set
+## 1. Merges training and test datasets to create one data set
 
 ## Reads in the test and training data sets
 subjects_test <- read.table("./UCI HAR Dataset/test/subject_test.txt")
@@ -26,7 +26,7 @@ colnames(features_data) <- features_labels$V2
 combined_dataset <- cbind(subjects_data, activities_data, features_data)
 
 
-## 2. Extract only measurements containing mean() and stdev() from 
+## 2. Extracts only measurements containing mean() and stdev() from 
 ## the combined dataset
 
 ## Extracts column numbers for mean and std
@@ -43,9 +43,9 @@ sort_columns <- sort(total_columns)
 tidydata_columns <- combined_dataset[sort_columns]
 
 
-## 3. Apply descriptive names to activities in the dataset
+## 3. Applies descriptive names to activities in the dataset
 
-## Change characters in "Activities" to be more descriptive names, these make
+## Changes characters in "Activities" to be more descriptive names, these make
 ## it easier to understand what activity was happening during measurement
 tidydata_columns$Activities[tidydata_columns$Activities %in% "1"] <- "Walking"
 tidydata_columns$Activities[tidydata_columns$Activities %in% "2"] <- "Walking Up"
@@ -60,13 +60,13 @@ tidydata_columns$Activities = factor(tidydata_columns$Activities, levels =
                                      ordered = TRUE)
 
 
-## 4. Change labels on 'features' columns
+## 4. Changes labels on 'features' columns
 
 ## Loads dplyr package to allow easier renaming
 library(dplyr)
 
-## Changes column names to their longform version, making it easier to understand 
-## what was being measured by each variable
+## Changes column names to their longform version, making it easier to 
+## understand what was being measured by each variable
 tidydata_renamed <- dplyr::rename(tidydata_columns, 
                                   Time.MeanBodyAcceleration.X = 
                                           `tBodyAcc-mean()-X`, 
@@ -203,7 +203,8 @@ tidydata_renamed <- dplyr::rename(tidydata_columns,
 )
 
 
-## 5. New dataset created that averages each variable for each activity and subject
+## 5. Creates new dataset that averages each variable for each activity and 
+## subject
 order_dataset <- group_by(tidydata_renamed, Subjects, Activities)
 tidy_dataset <- summarise_each(order_dataset, funs(mean))
 tidy_datset

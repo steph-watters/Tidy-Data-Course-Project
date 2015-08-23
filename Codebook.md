@@ -1,4 +1,4 @@
-# Codebook - Tidy Data Set.txt
+# Codebook - tidy data set.txt
 
 ***
 _Some of the information appearing in this file comes from the README.txt and features_info.txt files from the following dataset:_ <br>
@@ -53,7 +53,8 @@ Features were normalised and bounded within (-1, 1). <br> <br>
 
 ### Processed Data
 
-<br> The following operations were performed to create the data contained within ‘tidy data set.txt’. 
+<br> The following operations were performed to create the data contained within ‘tidy data set.txt’. <br>
+
 <br> _**Subjects datasets**_ 
 
 1.	subject_test.txt and subject_train.txt were combined
@@ -88,7 +89,7 @@ Features were normalised and bounded within (-1, 1). <br> <br>
 
 <br>
 
-_Renamed Time and Frequency Domain Variables_
+_**Renamed Time and Frequency Domain Variables**_
 
 Original Column Number | Old Column Description | New Column Number | New Column Description         
 ---------------------- | ---------------------- | ----------------- | ----------------------

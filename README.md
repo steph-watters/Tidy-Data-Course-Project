@@ -16,7 +16,7 @@ www.smartlab.ws <br>
 ***
 
 ###Introduction
-<br> This document describes the steps through which the run_analysis.R script transforms the training and test data components of the ‘Human Activity Recognition Using Smartphones Dataset’ into a tidy dataset that meets the requirements of the Coursera Getting and Cleaning Data Course Project. This R script does not use data from the ‘Inertial Signals’ files.<br>
+<br> This document describes the steps through which the run_analysis.R script transforms the training and test data sets from the ‘Human Activity Recognition Using Smartphones Dataset’ into a tidy dataset that meets the requirements of the Coursera Getting and Cleaning Data Course Project. This R script does not use data from the ‘Inertial Signals’ files.<br>
 
 To use the run_analysis.R script, the ‘UCI HAR Dataset’ folder must be downloaded into the working directory of R. This dataset can be downloaded from: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones<br>
 
