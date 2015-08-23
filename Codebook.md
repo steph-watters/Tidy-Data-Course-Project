@@ -29,23 +29,10 @@ This dataset takes input from the test and training datasets from the “Human A
 
 #####The raw data taken as input to the ‘Tidy Data Set’ were as follows: <br>
 
-Input File     Description                      Levels 
--------------- -------------------------------  ------------------------------
-subject_test   ID of the subject in the test    1 variable, 2947 observations
-.txt           group who completed the
-               experiment, ordered by activity
-               during measurement
-subject_train
-.txt   	
-X_test.txt
-X_train.txt
-features.txt 
-y_test.txt
-y_train.txt 
-------------------  ------------  --------
-
-| Input File | Description | Levels | 
-| subject_test.txt | ID of the subject in the test group who completed the experiment, ordered by activity during measurement | 1 variable, 2947 observations
+Input File     | Description                     | Levels 
+-------------- | ------------------------------- | ------------------------------
+subject_test.txt | ID of the subject in the test group who completed the experiment, ordered by activity during measurement | 1 variable, 2947 observations
+subject_test.txt | ID of the subject in the test group who completed the experiment, ordered by activity during measurement | 1 variable, 2947 observations
 subject_train.txt | ID of the subject in the training group who completed the experiment, ordered by activity during measurement | 1 variable, 7352 observations
 X_test.txt | Time and frequency domain output from the phone’s accelerometer and gyroscope for the test group | 561 variables, 2947 observations
 X_train.txt | Time and frequency domain output from the phone’s accelerometer and gyroscope, for the training group | 561 variables, 7352 observations 
